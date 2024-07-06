@@ -1,17 +1,15 @@
 import { View, TextInput, StyleSheet } from "react-native"
-import { SearchIcon } from "../icons/searchIcon"
 import { colors } from "../config/colors"
+import { SearchIcon } from "../icons/searchIcon"
 
-export const SearchInput = () => {
 
-    return (
-        <View style={styles.searchInput}>
-            <SearchIcon />
-            <TextInput placeholder="Buscar aquí..." />
-        </View>
+export const SearchInput = props => (
 
-    )
-}
+    <View style={styles.searchInput}>
+        <SearchIcon />
+        <TextInput {...props} />
+    </View>
+)
 
 const styles = StyleSheet.create({
     searchInput: {

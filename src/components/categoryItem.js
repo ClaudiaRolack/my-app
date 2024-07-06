@@ -16,16 +16,15 @@ const styles = StyleSheet.create({
         height: 170,
         alignItems: 'center',
         justifyContent: 'center', 
-     
     },
     text: {
-        color: '#6D7A71',
-        fontWeight: 'bold',
         textAlign: 'center',
         width: 80,
+        fontSize: 12,
     },
     image: {
         width: 100,
         height: 140,
+        resizeMode: 'contain',
     }
 })

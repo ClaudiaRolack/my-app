@@ -1,7 +1,7 @@
-import { View, Image, Text, StyleSheet } from "react-native";
+import { View, Image, Text, StyleSheet, Pressable } from "react-native";
 
-export const Card = ({ image, category, name, price }) => (
-    <View style={styles.card}>
+export const ProductItem = ({ image, category, name, price }) => (
+    <Pressable style={styles.productItem}>
         <View style={styles.imageContainer}>
             <Image source={image} style={styles.image} resizeMode="contain" />
         </View>
@@ -10,11 +10,11 @@ export const Card = ({ image, category, name, price }) => (
             <Text style={styles.text}>{category}</Text>
             <Text style={styles.text}>${price}</Text>
         </View>
-    </View>
+    </Pressable>
 )
 
 const styles = StyleSheet.create({
-    card: {
+    productItem: {
       height: 240,
     },
     imageContainer: {

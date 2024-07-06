@@ -8,9 +8,9 @@ export const Categories = () => {
         <View>
             <FlatList
                 data={dataCategories}
-                //contentContainerStyle={StyleSheet.list}
                 horizontal
                 renderItem={({ item }) => <CategoryItem name={item.name} image={item.image} />}
+                showsHorizontalScrollIndicator={false}
             />
         </View>
     )

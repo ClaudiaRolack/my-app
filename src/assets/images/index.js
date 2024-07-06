@@ -59,6 +59,9 @@ import introduction10 from "./products/kintroduction10.webp";
 import kids from "./products/kkids.webp";
 import touch from "./products/ktouch.webp";
 
+// Banner
+import banner1 from "./banner/banner1.jpg";
+
 export {
     logoAurea,
     imageHome,
@@ -112,5 +115,6 @@ export {
     introduction5,
     introduction10,
     kids,
-    touch
+    touch,
+    banner1
 }

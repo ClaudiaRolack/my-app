@@ -1,24 +1,37 @@
-import { View, FlatList, StyleSheet } from "react-native";
-import { dataProducts } from "../data/dataProducts.js";
-import { Card } from "../components/card.js";
+import { Text, FlatList, StyleSheet } from "react-native";
+import { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { dataProducts } from "../data/dataProducts.js";
+import { ProductItem } from "../components/productItem.js";
 import { SearchInput } from "../components/searchInput.js";
 
+
 export const ItemListCategories = () => {
-    const numColumns = 2;
+    const [textToSearch, setTextToSearch] = useState('')
+    const [productsFiltered, setProductsFiltered] = useState(dataProducts)
+
+    useEffect(() => {
+        const productsFiltered = dataProducts.filter(product => product.name.toLowerCase().includes(textToSearch.toLowerCase().trim()))
+        setProductsFiltered(productsFiltered)
+    }, [textToSearch])
 
     return (
         <SafeAreaView style={styles.ItemListCategories}>
-            <SearchInput />
-            <View >
-                <FlatList
-                    contentContainerStyle={styles.list}
-                    data={dataProducts}
-                    renderItem={({ item }) => <Card {...item} />}
-                    numColumns={numColumns}
-                    key={numColumns}
-                    columnWrapperStyle={styles.columnWrapper} />
-            </View>
+            <SearchInput
+                onChangeText={setTextToSearch}
+                value={textToSearch}
+                placeholder='Buscar aquí...'
+            />
+            <FlatList
+                contentContainerStyle={styles.list}
+                data={productsFiltered}
+                renderItem={({ item }) => <ProductItem {...item} />}
+                key={item => item.id}
+                numColumns={2}
+                columnWrapperStyle={styles.columnWrapper}
+            />
+            { productsFiltered.length === 0 ? (<Text>No se ha encontrado "{textToSearch}"</Text>) : null }
+
         </SafeAreaView>
     )
 }
