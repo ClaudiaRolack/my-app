@@ -8,7 +8,7 @@
     },
     {
         "id": 2,
-        "name": "Aceites Exclusivos",
+        "name": "Mezclas Exclusivas",
         "image": mezcla
     },
     {

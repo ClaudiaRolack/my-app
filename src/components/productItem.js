@@ -1,13 +1,12 @@
 import { View, Image, Text, StyleSheet, Pressable } from "react-native";
 
-export const ProductItem = ({ image, category, name, price }) => (
-    <Pressable style={styles.productItem}>
+export const ProductItem = ({ image, name, price, onPress }) => (
+    <Pressable style={styles.productItem} onPress={onPress} >
         <View style={styles.imageContainer}>
             <Image source={image} style={styles.image} resizeMode="contain" />
         </View>
         <View style={styles.info}>
             <Text style={styles.title}>{name}</Text>
-            <Text style={styles.text}>{category}</Text>
             <Text style={styles.text}>${price}</Text>
         </View>
     </Pressable>

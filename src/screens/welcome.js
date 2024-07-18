@@ -1,12 +1,13 @@
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { StyleSheet, View, Text } from 'react-native'
-import { Button } from '../components/buttonWelcome.js'
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet, View, Text } from "react-native";
+import { Button } from "../components/buttonWelcome.js";
+import { useNavigation } from "@react-navigation/native";
+import { ROUTE } from "../navigator/routes.js";
 
 export const Welcome = () => {
 
-  const handlePress = () => {
-    console.log('Ingresar');
-  }
+  const { navigate } = useNavigation()
+  const handlePress = () => { navigate(ROUTE.HOME) }
 
   return (
     <SafeAreaView style={styles.safeArea}>

@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet, Image } from "react-native"
+import { Text, StyleSheet, Image, Pressable } from "react-native"
 
-export const CategoryItem = ({ name, image }) => {
+export const CategoryItem = ({ name, image, onPress }) => {
     return (
-        <View style={styles.category}>
+        <Pressable style={styles.category} onPress={onPress} >
              <Image source={image} style={styles.image} />
             <Text style={styles.text}>{name}</Text>
-        </View>
+        </Pressable>
     )
 }
 

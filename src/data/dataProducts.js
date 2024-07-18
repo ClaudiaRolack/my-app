@@ -50,322 +50,322 @@ import {
 export const dataProducts = [
     {
         id: 1,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Clary Sage",
         price: 52000,
         image: clarySage
     },
     {
         id: 2,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Copaiba",
         price: 50000,
         image:copaiba
     },
     {
         id: 3,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Cypress",
         price: 24000,
         image: cypress
     },
     {
         id: 4,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Fennel",
         price: 22000,
         image: fennel
     },
     {
         id: 5,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Frankincense",
         price: 100000,
         image: frankincense
     },
     {
         id: 6,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Geranium",
         price: 58000, 
         image: geranium
     },
     {
         id: 7,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Lavender",
         price: 34000,
         image: lavender
     },
     {
         id: 8,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Lemon",
         price: 18000,
         image: lemon
     },
     {
         id: 9,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Oregano",
         price: 34000,
         image: oregano
     },
     {
         id: 10,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Perppermint",
         price: 32000,
         image: peppermint
     },
     {
         id: 11,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Rosemary",
         price: 24000,
         image: rosemary
     },
     {
         id: 12,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Spearmint",
         price: 38000,
         image: spearmint
     },
     {
         id: 13,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Tea Tree",
         price: 31000,
         image: teaTree
     },
     {
         id: 14,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Tumeric",
         price: 40000,
         image: tumeric
     },
     {
         id: 15,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Wild Orange",
         price: 15000,
         image: wildOrange
     },
     {
         id: 16,
-        category: "Aceites Individuales",
+        categoryId: 1,
         name: "Ylang Ylang",
         price: 54000,
         image: ylangYlang
     },
     {
         id: 17,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Adaptiv",
         price: 54000,
         image: adaptiv
     },
     {
         id: 18,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Aroma Touch",
         price: 40000,
         image: aromaTouch
     },
     {
         id: 19,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Balance",
         price: 28000, 
         image: balance
     },
     {
         id: 20,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Breathe",
         price: 34000,
         image: breathe
     },
     {
         id: 21,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Citrus Bliss",
         price: 26000,
         image: citrusBliss
     },
     {
         id: 22,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Deep Blue",
         price: 47000,
         image: deepBlue
     },
     {
         id: 23,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Digestzen",
         price: 46000, 
         image: digestzen
     },
     {
         id: 24,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Holiday Peace",
         price: 36000,
         image: holidayPeace
     },
     {
         id: 25,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Lemon Eucalyptus",
         price: 19000,
         image: lemonEucalyptus
     },
     {
         id: 26,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "On Guard",
         price: 48000,
         image: onGuard
     },
     {
         id: 27,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Purify",
         price: 30000,
         image: purify
     },
     {
         id: 28,
-        category: "Mezclas Exclusivas",
+        categoryId: 2,
         name: "Serenity",
         price: 48000,
         image: serenity
     },
     {
         id: 29,
-        category: "Cuidado del Cabello",
+        categoryId: 5,
         name: "Acondicionador",
         price: 31000,
         image: acondicionador
     },
     {
         id: 30,
-        category: "Cuidado del Cabello",
+        categoryId: 5,
         name: "Serum Brillo Fijador",
         price: 28000,
         image: brilloFijador
     },
     {
         id: 31,
-        category: "Cuidado del Cabello",
+        categoryId: 5,
         name: "Serum",
         price: 28000,
         image: serum
     },
     {
         id: 32,
-        category: "Cuidado del Cabello",
+        categoryId: 5,
         name: "Shampoo",
         price: 31000,
         image: shampoo
     },
     {
         id: 33,
-        category: "Cuidado de la Piel",
+        categoryId: 4,
         name: "Limpiador",
         price: 20000,
         image: cleanser
     },    
     {
         id: 34,
-        category: "Cuidado de la Piel",
+        categoryId: 4,
         name: "Crema de rostro",
         price: 43000,
         image: creme
     },
     {
         id: 35,
-        category: "Cuidado de la Piel",
+        categoryId: 4,
         name: "Exfoliante",
         price: 22000,
         image: exfoliante
     },
     {
         id: 36,
-        category: "Cuidado de la Piel",
+        categoryId: 4,
         name: "Contorno de ojos",
         price: 30000,
         image: eyeCreme
     },
     {
         id: 37,
-        category: "Cuidado de la Piel",
+        categoryId: 4,
         name: "Loción humectante",
         price: 43000,
         image: humectante
     },
     {
         id: 38,
-        category: "Cuidado de la Piel",
+        categoryId: 4,
         name: "Loción reduce poros",
         price: 31000,
         image: reducePoros
     },
     {
         id: 39,
-        category: "Cuidado de la Piel",
+        categoryId: 4,
         name: "Serum Reafirmante",
         price: 56000,
         image: serumReafirmante
     },
     {
         id: 40,
-        category: "Kits",
+        categoryId: 3,
         name: "Kit de masaje",
         price: 143000,
         image: aromaTouchTechnique
     },
     {
         id: 41,
-        category: "Kits",
+        categoryId: 3,
         name: "kit para deportistas",
         price: 170000,
         image: atlethic
     },
     {
         id: 42,
-        category: "Kits",
+        categoryId: 3,
         name: "Esenciales para el hogar",
         price: 164000,
         image: homeEssentials
     },
     {
         id: 43,
-        category: "Kits",
+        categoryId: 3,
         name: "Kit introductorio 5ml.",
         price: 32000,
         image: introduction5
     },
     {
         id: 44,
-        category: "Kits",
+        categoryId: 3,
         name: "Kit introductorio 10ml.",
         price: 67000,
         image: introduction10
     },
     {
         id: 45,
-        category: "Kits",
+        categoryId: 3,
         name: "Kit para niños",
         price: 166000,
         image: kids
     },
     {
         id: 46,
-        category: "Kits",
+        categoryId: 3,
         name: "Kit roll-on adulto",
         price: 172000,
         image: touch
