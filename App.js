@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { Navigator } from "./src/navigator/navigator.js";
+import { Provider } from "react-redux";
+import { store } from "./src/store/index.js";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -25,9 +27,11 @@ export default function App() {
 
   return (
     <>
-      <SafeAreaProvider>
-        <Navigator />
-      </SafeAreaProvider>
+      <Provider store={store}>
+        <SafeAreaProvider>
+          <Navigator />
+        </SafeAreaProvider>
+      </Provider>
     </>
   );
 }
