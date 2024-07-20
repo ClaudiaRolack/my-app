@@ -2,16 +2,14 @@ import { View, Text, StyleSheet } from "react-native"
 
 export const Header = () => (
     <View>
-        <Text style={styles.text}>Áurea</Text>
+        <Text style={styles.text}></Text>
     </View>
 )
 
 
 const styles = StyleSheet.create({
     text: {
-        fontSize: 20,
-        fontFamily: 'MajorMonoDisplay',
-        paddingBottom: 10,
+        padding: 15,
     },
 })
 

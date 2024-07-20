@@ -5,7 +5,7 @@ export const Banner = () => (
     <ImageBackground
         source={banner1}
         resizeMode='cover'
-        style={{ borderRadius: 16, overflow: 'hidden' }}
+        style={styles.image}
     >
         <View style={styles.banner}>
             <Text style={styles.text}>Vive más</Text>
@@ -25,6 +25,11 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 24,
         fontWeight: 'bold',
+    },
+    image: {
+        borderRadius: 16,
+        overflow: 'hidden',
+        padding: 16,
     },
 })
 
