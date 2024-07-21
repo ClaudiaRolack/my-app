@@ -1,49 +1,41 @@
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import { useEffect, useState } from "react";
-import { dataProducts } from "../data/dataProducts.js";
-import { dataCategories } from "../data/dataCategories.js";
 import { ProductItem } from "../components/productItem.js";
 import { SearchInput } from "../components/searchInput.js";
-import { useNavigation, useRoute } from "@react-navigation/native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { ROUTE } from "../navigator/routes.js";
+import { useSelector } from "react-redux";
 
 export const ItemListCategories = () => {
-    const { params } = useRoute();
     const { navigate, setOptions } = useNavigation();
     const [textToSearch, setTextToSearch] = useState('');
-    const [productsFiltered, setProductsFiltered] = useState([]);
-
-
-
-    useEffect(() => {
-        if (params && params.categoryId) {
-            const filteredByCategory = dataProducts.filter(product => product.categoryId === params.categoryId);
-            setProductsFiltered(filteredByCategory);
-        }
-    }, [params]);
-
-    useEffect(() => {
-        if (params && params.categoryId) {
-            const filteredByCategory = dataProducts.filter(product => product.categoryId === params.categoryId);
-            const productsFilteredByText = filteredByCategory.filter(product =>
-                product.name.toLowerCase().includes(textToSearch.toLowerCase().trim())
-            );
-            setProductsFiltered(productsFilteredByText);
-        }
-    }, [textToSearch, params]);
-
-    useEffect(() => {
-        const category = dataCategories.find(category => category.id === params.categoryId);
-        const categoryName = category ? category.name : '';
-        setOptions({ title: categoryName })
-    })
+    const products = useSelector(state => state.shop.productsFilteredByCategory);
+    const category = useSelector(state => state.shop.dataCategories);
+    const categorySelected = useSelector(state => state.shop.categorySelected);
+    const [productsFiltered, setProductsFiltered] = useState(products);
 
     const navigateToItemDetails = productId => navigate(ROUTE.ITEM_DETAIL, { productId });
+
+    const handleSearch = textToSearch => {
+        setTextToSearch(textToSearch);
+        const filteredProducts = products.filter(product =>
+            product.name.toLowerCase().includes(textToSearch.toLowerCase().trim())
+        );
+        setProductsFiltered(filteredProducts);
+    };
+
+    useEffect(() => setProductsFiltered(products), [products]);
+
+    useFocusEffect(() => {
+        const selectedCategory = category.find(cat => cat.id === categorySelected);
+        const categoryName = selectedCategory ? selectedCategory.name : '';
+        setOptions({ title: categoryName });
+    }, [categorySelected, category, setOptions]);
 
     return (
         <View style={styles.ItemListCategories}>
             <SearchInput
-                onChangeText={setTextToSearch}
+                onChangeText={handleSearch}
                 value={textToSearch}
                 placeholder='Buscar aquí...'
             />
@@ -66,12 +58,6 @@ const styles = StyleSheet.create({
         padding: 16,
         backgroundColor: '#fff',
         flex: 1,
-    },
-    categoryName: {
-        textAlign: 'center',
-        fontSize: 20,
-        fontWeight: 'bold',
-        padding: 5,
     },
     list: {
         alignItems: 'center',
