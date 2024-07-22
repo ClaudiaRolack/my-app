@@ -1,0 +1,1 @@
+export const DATABASE_URL = "https://my-app-569bd-default-rtdb.firebaseio.com/"

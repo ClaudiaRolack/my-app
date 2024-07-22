@@ -1,36 +1,49 @@
-import { View, Text, FlatList, StyleSheet } from "react-native";
-import { useEffect, useState } from "react";
+import { View, Text, FlatList, StyleSheet, ActivityIndicator } from "react-native";
+import { useEffect, useState, useCallback } from "react";
 import { ProductItem } from "../components/productItem.js";
 import { SearchInput } from "../components/searchInput.js";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { ROUTE } from "../navigator/routes.js";
 import { useSelector } from "react-redux";
+import { useGetProductsByCategoryQuery } from "../services/shopService.js";
+import { colors } from "../config/colors.js";
 
 export const ItemListCategories = () => {
-    const { navigate, setOptions } = useNavigation();
-    const [textToSearch, setTextToSearch] = useState('');
-    const products = useSelector(state => state.shop.productsFilteredByCategory);
-    const category = useSelector(state => state.shop.dataCategories);
-    const categorySelected = useSelector(state => state.shop.categorySelected);
-    const [productsFiltered, setProductsFiltered] = useState(products);
+    const { navigate, setOptions } = useNavigation()
+    const [textToSearch, setTextToSearch] = useState('')
+    const categorySelected = useSelector(state => state.shop.categorySelected)
+    const dataCategories = useSelector(state => state.shop.dataCategories)
+    const { data: products, isLoading } = useGetProductsByCategoryQuery(categorySelected)
+    const [productsFiltered, setProductsFiltered] = useState([])
 
-    const navigateToItemDetails = productId => navigate(ROUTE.ITEM_DETAIL, { productId });
+    const navigateToItemDetails = productId => navigate(ROUTE.ITEM_DETAIL, { productId })
+
+    useEffect(() => setProductsFiltered(products), [products])
 
     const handleSearch = textToSearch => {
-        setTextToSearch(textToSearch);
+        if (!textToSearch) return
+        setTextToSearch(textToSearch)
         const filteredProducts = products.filter(product =>
             product.name.toLowerCase().includes(textToSearch.toLowerCase().trim())
         );
-        setProductsFiltered(filteredProducts);
+        setProductsFiltered(filteredProducts)
     };
 
-    useEffect(() => setProductsFiltered(products), [products]);
+    useEffect(() => setProductsFiltered(products), [products])
 
-    useFocusEffect(() => {
-        const selectedCategory = category.find(cat => cat.id === categorySelected);
-        const categoryName = selectedCategory ? selectedCategory.name : '';
-        setOptions({ title: categoryName });
-    }, [categorySelected, category, setOptions]);
+    useFocusEffect(
+        useCallback(() => {
+            if (!products || !categorySelected) return
+            const selectedCategory = dataCategories.find(cat => cat.id === categorySelected)
+            const categoryName = selectedCategory ? selectedCategory.name : ''
+            setOptions({ title: categoryName })
+        }, [products, setOptions])
+    );
+
+    if (isLoading) return <View style={styles.listLoading}>
+        <ActivityIndicator size='small' color={colors.mossgreen} />
+        <Text>Cargando categorías . . .</Text>
+    </View>
 
     return (
         <View style={styles.ItemListCategories}>
@@ -47,9 +60,9 @@ export const ItemListCategories = () => {
                 numColumns={2}
                 columnWrapperStyle={styles.columnWrapper}
             />
-            {productsFiltered.length === 0 ? (<Text>No se ha encontrado "{textToSearch}"</Text>) : null}
+            {productsFiltered && productsFiltered.length === 0  ? (<Text>No se ha encontrado "{textToSearch}"</Text>) : null}
         </View>
-    );
+    )
 }
 
 const styles = StyleSheet.create({
@@ -66,4 +79,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         gap: 30,
     },
-});
+    listLoading: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+})

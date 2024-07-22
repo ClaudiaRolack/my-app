@@ -1,7 +1,7 @@
 import { Text, StyleSheet, Image, View } from "react-native";
 import { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { dataProducts } from "../data/dataProducts";
+import { dataProducts } from "../data/dataProducts.js";
 import { useRoute } from "@react-navigation/native";
 import { formatPrice } from "../utils/price.js";
 

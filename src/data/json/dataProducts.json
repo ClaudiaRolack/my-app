@@ -1,0 +1,324 @@
+[
+    {
+        "id": 1,
+        "categoryId": 1,
+        "name": "Clary Sage",
+        "price": 52000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601083/2aiclarysage_hu5kqb.webp"
+    },
+    {
+        "id": 2,
+        "categoryId": 1,
+        "name": "Copaiba",
+        "price": 50000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601084/2aicopaiba_shu2vh.webp"
+    },
+    {
+        "id": 3,
+        "categoryId": 1,
+        "name": "Cypress",
+        "price": 24000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601084/2aicypress_nrogqq.webp"
+    },
+    {
+        "id": 4,
+        "categoryId": 1,
+        "name": "Fennel",
+        "price": 22000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601086/2aifennel_dnchib.webp"
+    },
+    {
+        "id": 5,
+        "categoryId": 1,
+        "name": "Frankincense",
+        "price": 100000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601086/2aifrankincense_eg9sod.webp"
+    },
+    {
+        "id": 6,
+        "categoryId": 1,
+        "name": "Geranium",
+        "price": 58000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601086/2aigeranium_ev98oi.webp"
+    },
+    {
+        "id": 7,
+        "categoryId": 1,
+        "name": "Lavender",
+        "price": 34000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601089/2ailavender_wlbxqi.webp"
+    },
+    {
+        "id": 8,
+        "categoryId": 1,
+        "name": "Lemon",
+        "price": 18000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601089/2ailemon_agmhpl.webp"
+    },
+    {
+        "id": 9,
+        "categoryId": 1,
+        "name": "Oregano",
+        "price": 34000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601090/2aioregano_g8sf0o.webp"
+    },
+    {
+        "id": 10,
+        "categoryId": 1,
+        "name": "Perppermint",
+        "price": 32000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601092/2aipeppermint_uhgr8b.webp"
+    },
+    {
+        "id": 11,
+        "categoryId": 1,
+        "name": "Rosemary",
+        "price": 24000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601092/2airosemary_aid8rr.webp"
+    },
+    {
+        "id": 12,
+        "categoryId": 1,
+        "name": "Spearmint",
+        "price": 38000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601096/2aispearmint_riatzx.webp"
+    },
+    {
+        "id": 13,
+        "categoryId": 1,
+        "name": "Tea Tree",
+        "price": 31000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601097/2aiteatree_ashzfq.webp"
+    },
+    {
+        "id": 14,
+        "categoryId": 1,
+        "name": "Tumeric",
+        "price": 40000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601098/2aitumeric_h7farp.webp"
+    },
+    {
+        "id": 15,
+        "categoryId": 1,
+        "name": "Wild Orange",
+        "price": 15000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601102/2aiwildorange_fcsc4q.webp"
+    },
+    {
+        "id": 16,
+        "categoryId": 1,
+        "name": "Ylang Ylang",
+        "price": 54000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601102/2aiylangylang_spks5e.webp"
+    },
+    {
+        "id": 17,
+        "categoryId": 2,
+        "name": "Adaptiv",
+        "price": 54000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601104/3madaptiv_bgoi7a.webp"
+    },
+    {
+        "id": 18,
+        "categoryId": 2,
+        "name": "Aroma Touch",
+        "price": 40000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601104/3maromatouch_jto1kb.webp"
+    },
+    {
+        "id": 19,
+        "categoryId": 2,
+        "name": "Balance",
+        "price": 28000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601106/3mbalance_x64mcj.webp"
+    },
+    {
+        "id": 20,
+        "categoryId": 2,
+        "name": "Breathe",
+        "price": 34000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601107/3mbreathe_mq9mtk.webp"
+    },
+    {
+        "id": 21,
+        "categoryId": 2,
+        "name": "Citrus Bliss",
+        "price": 26000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601109/3mcitrusbliss_npl3r6.webp"
+    },
+    {
+        "id": 22,
+        "categoryId": 2,
+        "name": "Deep Blue",
+        "price": 47000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601110/3mdeepblue_der7u8.webp"
+    },
+    {
+        "id": 23,
+        "categoryId": 2,
+        "name": "Digestzen",
+        "price": 46000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601111/3mdigestzen_m59luy.webp"
+    },
+    {
+        "id": 24,
+        "categoryId": 2,
+        "name": "Holiday Peace",
+        "price": 36000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601114/3mholidaypeace_sfiyss.png"
+    },
+    {
+        "id": 25,
+        "categoryId": 2,
+        "name": "Lemon Eucalyptus",
+        "price": 19000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601114/3mlemoneucalyptus_obj3lk.webp"
+    },
+    {
+        "id": 26,
+        "categoryId": 2,
+        "name": "On Guard",
+        "price": 48000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601117/3monguard_h2te4h.webp"
+    },
+    {
+        "id": 27,
+        "categoryId": 2,
+        "name": "Purify",
+        "price": 30000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601118/3mpurify_wzkqqj.webp"
+    },
+    {
+        "id": 28,
+        "categoryId": 2,
+        "name": "Serenity",
+        "price": 48000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601121/3mserenity_pxjkwf.webp"
+    },
+    {
+        "id": 29,
+        "categoryId": 5,
+        "name": "Acondicionador",
+        "price": 31000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601121/ccacondicionador_keyhuj.jpg"
+    },
+    {
+        "id": 30,
+        "categoryId": 5,
+        "name": "Serum Brillo Fijador",
+        "price": 28000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601124/ccbrillofijador_hjcln0.jpg"
+    },
+    {
+        "id": 31,
+        "categoryId": 5,
+        "name": "Serum",
+        "price": 28000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601125/ccserum_ziouwy.jpg"
+    },
+    {
+        "id": 32,
+        "categoryId": 5,
+        "name": "Shampoo",
+        "price": 31000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601128/ccshampoo_vhvezx.jpg"
+    },
+    {
+        "id": 33,
+        "categoryId": 4,
+        "name": "Limpiador",
+        "price": 20000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601128/cpcleanser_p8xjao.jpg"
+    },
+    {
+        "id": 34,
+        "categoryId": 4,
+        "name": "Crema de rostro",
+        "price": 43000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601132/cpcrema_oqgrms.jpg"
+    },
+    {
+        "id": 35,
+        "categoryId": 4,
+        "name": "Exfoliante",
+        "price": 22000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601132/cpexfoliante_hgo5nk.jpg"
+    },
+    {
+        "id": 36,
+        "categoryId": 4,
+        "name": "Contorno de ojos",
+        "price": 30000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601136/cpeyecreme_ivy2p9.jpg"
+    },
+    {
+        "id": 37,
+        "categoryId": 4,
+        "name": "Loción humectante",
+        "price": 43000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601136/cphumectante_edi2w9.jpg"
+    },
+    {
+        "id": 38,
+        "categoryId": 4,
+        "name": "Loción reduce poros",
+        "price": 31000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601137/cpreduceporos_rn8o7u.jpg"
+    },
+    {
+        "id": 39,
+        "categoryId": 4,
+        "name": "Serum Reafirmante",
+        "price": 56000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601142/cpserumreafirmante_p2r2x4.jpg"
+    },
+    {
+        "id": 40,
+        "categoryId": 3,
+        "name": "Kit de masaje",
+        "price": 143000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601142/karomaTouchTechnique_cm2rkg.jpg"
+    },
+    {
+        "id": 41,
+        "categoryId": 3,
+        "name": "kit para deportistas",
+        "price": 170000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601145/katlethic_sab8yb.jpg"
+    },
+    {
+        "id": 42,
+        "categoryId": 3,
+        "name": "Esenciales para el hogar",
+        "price": 164000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601146/khomeEssentials_xsouhq.jpg"
+    },
+    {
+        "id": 43,
+        "categoryId": 3,
+        "name": "Kit introductorio 5ml.",
+        "price": 32000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601147/kintroduction5_zxuhsu.png"
+    },
+    {
+        "id": 44,
+        "categoryId": 3,
+        "name": "Kit introductorio 10ml.",
+        "price": 67000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601150/kintroduction10_o3hvwu.png"
+    },
+    {
+        "id": 45,
+        "categoryId": 3,
+        "name": "Kit para niños",
+        "price": 166000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601150/kkids_i20lcj.png"
+    },
+    {
+        "id": 46,
+        "categoryId": 3,
+        "name": "Kit roll-on adulto",
+        "price": 172000,
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601153/ktouch_q1nsyf.jpg"
+    }
+]

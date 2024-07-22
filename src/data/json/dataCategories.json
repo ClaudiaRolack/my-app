@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Aceites Individuales",
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601037/Cindividual_xh9dsu.webp"
+    },
+    {
+        "id": 2,
+        "name": "Mezclas Exclusivas",
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601038/Cmezcla_siessa.webp"
+    },
+    {
+        "id": 3,
+        "name": "kits",
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601038/Ckits_tcewh4.png"
+    },
+    {
+        "id": 4,
+        "name": "Cuidado de la piel",
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601037/Ccuidadopiel_prfq4x.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Cuidado del cabello",
+        "image": "https://res.cloudinary.com/ddkoo5ofp/image/upload/v1721601037/Ccuidadocabello_uke01j.jpg"
+    }
+]

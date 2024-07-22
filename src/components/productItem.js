@@ -4,7 +4,7 @@ import { formatPrice } from "../utils/price";
 export const ProductItem = ({ image, name, price, onPress }) => (
     <Pressable style={styles.productItem} onPress={onPress} >
         <View style={styles.imageContainer}>
-            <Image source={image} style={styles.image} resizeMode="contain" />
+            <Image source={{ uri:image }} style={styles.image} resizeMode="contain" />
         </View>
         <View style={styles.info}>
             <Text style={styles.title}>{name}</Text>

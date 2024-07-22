@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { dataProducts } from "../../data/dataProducts";
-import { dataCategories } from "../../data/dataCategories";
+import { dataProducts } from "../../data/dataProducts.js";
+import { dataCategories } from "../../data/dataCategories.js";
 
 export const shopSlice = createSlice({
     name: 'shop',
